@@ -47,6 +47,11 @@ bind-key C-o rotate-window
 bind-key + select-layout main-horizontal
 bind-key = select-layout main-vertical
 
+# add bindings to make everything even and to split a pane into quarters
+bind-key ^ select-layout even-horizontal
+bind-key & split-window \; split-window \; split-window \; select-layout tiled 
+
+
 set-window-option -g other-pane-height 25
 set-window-option -g other-pane-width 80
 set-window-option -g display-panes-time 1500
